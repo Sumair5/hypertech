@@ -1,0 +1,103 @@
+/* 📌 Mobile Info Page Styles */
+.mobileDetailsContainer {
+  background-color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.mobileImage {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* 📌 Title & Price */
+.mobileTitle {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.mobilePrice {
+  font-size: 22px;
+  color: #28a745;
+}
+
+
+
+
+/* 📌 Action Buttons */
+.actionButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+
+
+
+
+
+
+/* 📌 Return Policy */
+.returnPolicy {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* 📌 Social Media Icons */
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.socialIcons i {
+  cursor: pointer;
+  color: #555;
+}
+
+.socialIcons i:hover {
+  color: #007bff;
+}
+
+/* 📌 Mobile Description */
+.mobileDescription {
+  margin: 15px 0;
+}
+
+/* 📌 Specifications Table */
+.mobileSpecs {
+  margin: 0 auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.mobileSpecs td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.specKey {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+
+/* 📌 Custom Toast Message */
+.customToast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}

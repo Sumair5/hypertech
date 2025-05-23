@@ -1,0 +1,132 @@
+/* UserDetails.module.css */
+
+/* ✅ UserDetails Page Layout */
+.userContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  background: #c4f600;
+}
+
+/* ✅ User Info Box */
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  align-items: center;
+  background: #fff;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+}
+
+.userInfo h2 {
+  color: #333;
+}
+
+.userInfo p {
+  color: #555;
+}
+
+.logoutBtn {
+  background: #ff4d4d;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.logoutBtn:hover {
+  background: #cc0000;
+}
+
+/* ✅ Authentication Form */
+.authForm {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+.authForm h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ✅ Form Inputs */
+.authForm input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* ✅ Submit Button */
+.authForm button {
+  width: 100%;
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.authForm button:hover {
+  background: #0056b3;
+}
+
+/* ✅ Switch Login/Signup */
+.authForm p {
+  margin-top: 10px;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.authForm p:hover {
+  text-decoration: underline;
+}
+
+.actionsBtns {
+  background-color: #ebe6e6;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px rgba(26, 255, 0, 0.1);
+}
+
+.actionsBtns button {
+  background: #45bdf5;
+  color: white;
+  margin-left: 1rem;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* 🔹 Mobile View */
+@media (max-width: 768px) {
+  .userInfo {
+    flex-direction: column;
+  }
+  .actionsBtns {
+    flex-direction: column;
+  }
+}

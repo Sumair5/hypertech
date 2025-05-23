@@ -1,0 +1,119 @@
+/* === Cart Container === */
+.cartContainer {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f6f6;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Cart Items Grid === */
+.cartItems {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* === Cart Item Card === */
+.cartItem {
+  display: flex;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  gap: 15px;
+  height: auto;
+}
+
+/* === Product Image === */
+.productImage {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+/* === Product Details === */
+.productDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+/* === Quantity Control Buttons === */
+.quantityControl {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.quantityControl button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quantityControl button:disabled {
+  background: #ccc;
+}
+
+/* === Remove Button === */
+.removeBtn {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+/* === Price Summary Section === */
+.productPriceTotal {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* === Headings === */
+h2, h3, h4 {
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  .cartItem {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .productImage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .productDetails {
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .removeBtn {
+    margin-top: 10px;
+  }
+}

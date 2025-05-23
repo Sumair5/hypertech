@@ -1,0 +1,81 @@
+/* SmartwatchInfo.module.css */
+.smartwatchContainer {
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.smartwatchImage {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.smartwatchTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.smartwatchPrice {
+  color: green;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+
+/* 📌 Action Buttons */
+.actionButtons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+} 
+.buyNow {
+   background-color: #0B61AE;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 20px;
+}
+
+.updateBtn {
+  background-color: orange;
+  color: white;
+  padding: 6px 12px;
+  margin-bottom: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.smartwatchDescription {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+.smartwatchSpecs {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.smartwatchSpecs td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.specKey {
+  font-weight: bold;
+  background-color: #f9f9f9;
+}
+
+.customToast {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}

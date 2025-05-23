@@ -1,0 +1,130 @@
+/* ============================
+   Product List Main Container
+=============================== */
+.productListContainer {
+  padding: 20px;
+  margin: 0 auto;
+  background-color: white;
+  font-family: Arial, sans-serif;
+}
+
+.productListContainer h1,
+.productListContainer h2 {
+  color: #2d2d2d;
+}
+
+/* ============================
+   Header Section
+=============================== */
+.productHeader {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 20px;
+  gap: 10px;
+}
+
+.productHeader h1 {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+  flex: 1;
+}
+
+.filterLabel {
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+}
+
+.productHeader select {
+  padding: 8px 12px;
+  font-weight: 500;
+  font-size: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.productHeader select:hover,
+.productHeader select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  .productHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .productHeader select {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* ============================
+   Info Section
+=============================== */
+.productInfo {
+  margin: 10px 0;
+  padding: 15px;
+}
+
+.productInfo h2 {
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.productInfo p {
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  color: #474747;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .productInfo {
+    padding: 10px;
+  }
+
+  .productInfo h2 {
+    font-size: 20px;
+  }
+
+  .productInfo p {
+    font-size: 14px;
+  }
+}
+
+/* ============================
+   Product Cards Grid
+=============================== */
+.productList {
+  display: flex;
+  justify-content: start;
+  /* Space between cards */
+
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 1px;
+}
+
+/* ============================
+   Loading Text
+=============================== */
+.loadingText {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 16px;
+}

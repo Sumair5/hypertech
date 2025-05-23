@@ -1,0 +1,268 @@
+/* 🔹 Header Container */
+.upperHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 30px ;
+  flex-wrap: wrap;
+}
+
+/* 🔹 Logo */
+.logo img {
+  height: 50px;
+  max-width: 200px;
+  width: auto;
+}
+
+/* 🔹 Header Left */
+.headerLeft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+/* 🔹 Header Right */
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 🔹 Search Box */
+.searchContainer {
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-right: 50px;
+}
+
+.searchBox {
+  position: relative;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 1px 3px rgba(74, 144, 226, 0.3);
+}
+
+.searchButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  color: #666;
+}
+
+.searchButton:hover {
+  color: #4a90e2;
+}
+
+/* 🔹 Buttons (Login & Cart) */
+.loginBtn,
+.cartBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.loginBtn:hover,
+.cartBtn:hover {
+  background-color: #0056b3;
+}
+
+/* 🔹 Lower Header */
+.lowerHeader {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  padding: 10px 0;
+}
+
+.lowerHeaderUl {
+  font-weight: 600;
+  font-size: .7em;
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+}
+
+.lowerHeader li {
+  position: relative;
+  font-size: 16px;
+}
+
+.lowerHeader li a {
+  color: #5f5353;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+/* 🔹 Dropdown Menus */
+.dropdownContainer:hover .dropdownMenu,
+.accessoriesDropdownContainer:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownMenu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  min-width: 280px;
+  z-index: 999;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+}
+.dropdownMenu li{
+  padding: 5px;
+  box-shadow: 2px 2px 2px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+/* ✅ Accessories Link Container */
+.accessoriesDropdownContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* ✅ Accessories Link Styling */
+.accessoriesDropdownContainer > a {
+  color: #5f5353;
+  text-decoration: none;
+}
+
+/* ✅ Submenu Titles */
+.submenuTitle {
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+/* ✅ Submenu List */
+.submenu {
+  list-style: none;
+  padding-left: 15px;
+  margin: 0;
+}
+
+/* ✅ Submenu Links */
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.submenu a:hover {
+  color: #007bff;
+}
+
+/* 🔹 Drawer for Mobile */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: #fff;
+  transition: left 0.3s ease;
+  z-index: 9999;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.drawer.open {
+  left: 0;
+}
+
+.closeBtn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.drawerLinks {
+  list-style: none;
+  padding: 0;
+}
+
+.drawerLinks li {
+  margin-bottom: 10px;
+}
+
+.drawerLinks a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* 🔹 Mobile Responsive Fixes */
+@media (max-width: 768px) {
+  .lowerHeader {
+    display: none;
+  }
+
+  .drawer .dropdownMenu {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
+  .submenuTitle {
+    margin-top: 10px;
+    background-color: transparent;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  .submenu {
+    padding-left: 10px;
+  }
+
+  .submenu li {
+    margin-bottom: 5px;
+  }
+}

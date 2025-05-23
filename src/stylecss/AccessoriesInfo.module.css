@@ -1,0 +1,63 @@
+/* 📁 src/stylecss/AccessoriesInfo.module.css */
+
+.accessory-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.accessory-image {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.accessory-title {
+  font-size: 2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.accessory-price {
+  font-size: 1.5rem;
+  color: green;
+  text-align: center;
+}
+
+/* 📌 Action Buttons */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.accessory-brand,
+.accessory-type,
+.accessory-category {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 4px 0;
+}
+
+
+/* Title ko center karna */
+.description-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* List left aligned hi hai by default, lekin safety ke liye confirm karte hain */
+.accessory-description {
+  text-align: left;
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}

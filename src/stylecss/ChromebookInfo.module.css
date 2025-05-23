@@ -1,0 +1,77 @@
+.chromebook-container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.product-title {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.product-price {
+  text-align: center;
+  color: #008060;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.product-description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.product-specs {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.product-specs td {
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+}
+
+.spec-key {
+  font-weight: bold;
+  background: #f0f0f0;
+}
+
+
+
+.custom-toast {
+  background-color: #000;
+  color: #fff;
+  padding: 0.8rem 1.2rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+
+.loading {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 2rem;
+}

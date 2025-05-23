@@ -1,0 +1,56 @@
+/* success.module.css */
+.successContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #42e695, #3bb2b8);
+  text-align: center;
+}
+
+.successCard {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  animation: popUp 0.5s ease-in-out;
+}
+
+@keyframes popUp {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.successTitle {
+  font-size: 24px;
+  color: #1e8449;
+  margin-bottom: 10px;
+}
+
+.successText {
+  font-size: 16px;
+  color: #333;
+}
+
+.orderId {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d35400;
+  margin: 10px 0;
+}
+
+.homeBtn {
+  display: inline-block;
+  background: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.homeBtn:hover {
+  background: #218838;
+}

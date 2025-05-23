@@ -1,0 +1,127 @@
+/* ✅ Overall container style */
+.laptopDetailsContainer {
+  padding: 2rem;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ Laptop image */
+.laptopImage {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* ✅ Title and price center aligned */
+.laptopTitle, .laptopPrice {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+.laptopTitle {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.laptopPrice {
+  font-size: 24px;
+  color: #007bff;
+}
+
+
+
+
+
+/* ✅ Action buttons */
+.actionButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px ;
+}
+
+
+
+
+
+/* ✅ Return policy */
+.returnPolicy {
+  text-align: center;
+  margin: 15px 0;
+  color: #6c757d;
+}
+
+/* ✅ Description */
+.laptopDescription {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ✅ Specs Table */
+.laptopSpecs {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.laptopSpecs td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.laptopSpecs .specKey {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+/* ✅ Toast Message */
+.customToast {
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* ✅ Loading Message */
+.loading {
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+  color: #007bff;
+}
+
+/* ✅ Responsive Styles */
+@media (max-width: 768px) {
+  .laptopTitle {
+    font-size: 22px;
+  }
+
+  .laptopPrice {
+    font-size: 20px;
+  }
+
+  .quantityContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .actionButtons {
+    flex-direction: column;
+  }
+
+
+
+
+  .laptopSpecs td {
+    font-size: 14px;
+  }
+}

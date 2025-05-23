@@ -1,0 +1,35 @@
+/* Home.module.css */
+.container {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background: linear-gradient(135deg, #f3f4f6, #e3e4e8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 3rem;
+  color: #4CAF50;
+  margin: 20px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.description {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin: 10px 0;
+  color: #555;
+}
+
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

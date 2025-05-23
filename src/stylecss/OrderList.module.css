@@ -1,0 +1,160 @@
+/* Overall container for the order list */
+.orderListContainer {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Container for the filter options */
+.filterContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+/* Input field and button in the filter */
+.filterContainer input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filterContainer button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filterContainer select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Style for the order cards */
+.ordersContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Order card styling */
+.orderCard {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.orderCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Order ID, user details and address */
+.orderCard h3.orderId {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.orderCard p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.orderCard p strong {
+    color: #333;
+}
+
+/* Product details section */
+.orderDetails {
+    margin-top: 15px;
+}
+
+.orderDetails h4 {
+    margin-bottom: 10px;
+    color: #007bff;
+    font-size: 16px;
+}
+
+.productDetails {
+    margin-bottom: 10px;
+}
+
+.productDetails p {
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Order actions (buttons) */
+.orderActions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.orderActions button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.orderActions button:hover {
+    background-color: #218838;
+}
+
+.orderActions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Styling for when no orders are found */
+.ordersContainer p {
+    font-size: 18px;
+    color: #888;
+    text-align: center;
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 768px) {
+    .orderListContainer {
+        padding: 10px;
+    }
+
+    .filterContainer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filterContainer input,
+    .filterContainer button,
+    .filterContainer select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .ordersContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .orderCard {
+        padding: 15px;
+    }
+}

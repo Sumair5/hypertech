@@ -1,0 +1,130 @@
+.productCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 10px;
+  width: 250px; /* Fixed width */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Take full height of grid cell */
+  text-align: center;
+}
+
+/* Ensure content takes up space properly */
+.productCard > * {
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+.productImageContainer {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.productImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.productInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+height: 250px;
+}
+
+.productCard h6 {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productCard h2 {
+  margin: 8px 0;
+  height: 100px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6; /* Limit to 6 lines for webkit browsers */
+  line-clamp: 6;          /* Standard property */  
+  overflow: hidden;
+}
+
+.productCard p {
+  margin: 8px 0 0;
+  font-size: 16px;
+  color: #222;
+  margin-top: auto; /* Push price to bottom */
+}
+
+/* Responsive styles */
+@media (max-width: 1280px) {
+  .productCard {
+    width: 230px;
+  }
+}
+
+@media (max-width: 992px) {
+  .productCard {
+    width: 200px;
+  }
+  .productImageContainer {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productCard {
+    width: 180px;
+    padding: 12px;
+  }
+  .productImageContainer {
+    height: 160px;
+  }
+  .productInfo {
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .productCard {
+    width: 160px;
+    margin: 8px;
+  }
+  .productImageContainer {
+    height: 140px;
+    margin-bottom: 8px;
+  }
+  .productCard h2 {
+    font-size: 14px;
+  }
+  .productCard p {
+    font-size: 14px;
+  }
+  .productInfo {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .productCard {
+    width: calc(50% - 20px);
+  }
+}
