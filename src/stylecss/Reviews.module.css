@@ -97,6 +97,8 @@
 
 /* ✅ Add Review Form */
 .formSection {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
     padding: 15px;
     background: white;
@@ -113,7 +115,6 @@
 .formSection select,
 .formSection textarea,
 .formSection input {
-    width: 100%;
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #ccc;
