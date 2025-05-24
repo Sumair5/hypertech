@@ -62,7 +62,7 @@ const ProductList = ({
     },
     [loadMore]
   );
-
+     
   return (
     <div className={styles.productListContainer}>
       {/* 🔹 Header section */}

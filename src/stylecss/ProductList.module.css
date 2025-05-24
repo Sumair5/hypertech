@@ -2,10 +2,11 @@
    Product List Main Container
 =============================== */
 .productListContainer {
-  padding: 20px;
+  padding: 10px;
   margin: 0 auto;
   background-color: white;
   font-family: Arial, sans-serif;
+  max-width: 1024px;
 }
 
 .productListContainer h1,
@@ -107,19 +108,6 @@
 }
 
 /* ============================
-   Product Cards Grid
-=============================== */
-.productList {
-  display: flex;
-  justify-content: start;
-  /* Space between cards */
-
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 1px;
-}
-
-/* ============================
    Loading Text
 =============================== */
 .loadingText {
@@ -128,3 +116,72 @@
   margin-top: 15px;
   font-size: 16px;
 }
+
+/* =======================
+   Product List Container
+   ======================= */
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Cards centered horizontally */
+  gap: 16px;
+  padding: 16px;
+}
+
+/* =======================
+   Individual Cards
+   ======================= */
+.productList > * {
+  width: 250px; /* ✅ Fixed card width */
+  flex: 0 0 auto; /* Don’t grow or shrink */
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* ✅ Container Style */
+.productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards */
+  gap: 16px;
+  padding: 16px;
+}
+
+/* ========================
+   🔹 Product List Container (Grid Based)
+   ======================== */
+.productList {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  box-sizing: border-box;
+
+  /* 🔹 Default: 1 Card */
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* 🔹 ≥ 550px: 2 Cards */
+@media (min-width: 480px) {
+  .productList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 🔹 ≥ 768px: 3 Cards */
+@media (min-width: 768px) {
+  .productList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 🔹 ≥ 1025px: 4 Cards */
+@media (min-width: 1025px) {
+  .productList {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
