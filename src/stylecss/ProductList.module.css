@@ -161,25 +161,20 @@
   box-sizing: border-box;
 
   /* 🔹 Default: 1 Card */
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-/* 🔹 ≥ 550px: 2 Cards */
-@media (min-width: 480px) {
-  .productList {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
+
 
 /* 🔹 ≥ 768px: 3 Cards */
-@media (min-width: 768px) {
+@media (min-width: 550px) {
   .productList {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 /* 🔹 ≥ 1025px: 4 Cards */
-@media (min-width: 1025px) {
+@media (min-width: 850px) {
   .productList {
     grid-template-columns: repeat(4, 1fr);
   }
