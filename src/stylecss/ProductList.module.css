@@ -130,14 +130,14 @@
 }
 
 /* ≥ 600px: 2 columns */
-@media (min-width: 350px) {
+@media (min-width: 450px) {
   .productList {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 /* ≥ 768px: 3 columns */
-@media (min-width: 550px) {
+@media (min-width: 6500px) {
   .productList {
     grid-template-columns: repeat(3, 1fr);
   }
