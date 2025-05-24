@@ -1,8 +1,12 @@
 .productCard {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  padding: 16px;
-  margin: 10px;
+  padding: 10px;
+  margin: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  /* Yeh zaroori hai */
+
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -12,9 +16,13 @@
   height: 100%;
   /* Take full height of grid cell */
   text-align: center;
-  width: 100%;
 }
 
+/* Ensure content takes up space properly */
+.productCard>* {
+  flex-shrink: 0;
+  /* Prevent shrinking */
+}
 
 .productImageContainer {
   height: 250px;
@@ -74,3 +82,64 @@
   /* Push price to bottom */
 }
 
+/* Responsive styles */
+@media (max-width: 1280px) {
+  .productCard {
+    width: 230px;
+  }
+}
+
+@media (max-width: 992px) {
+  .productCard {
+    width: 200px;
+  }
+
+  .productImageContainer {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .productCard {
+    width: 180px;
+    padding: 12px;
+  }
+
+  .productImageContainer {
+    height: 160px;
+  }
+
+  .productInfo {
+    min-height: 150px;
+  }
+}
+
+@media (max-width: 576px) {
+  .productCard {
+    width: 160px;
+    margin: 8px;
+  }
+
+  .productImageContainer {
+    height: 140px;
+    margin-bottom: 8px;
+  }
+
+  .productCard h2 {
+    font-size: 14px;
+  }
+
+  .productCard p {
+    font-size: 14px;
+  }
+
+  .productInfo {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 400px) {
+  .productCard {
+    width: calc(50% - 20px);
+  }
+}
